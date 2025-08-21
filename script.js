@@ -2,24 +2,18 @@
 let nome = prompt("Digite seu nome: ")
 let idade = parseInt(prompt("Digite sua idade: "))
 
-if (idade < 13) {
-    alert("Não foi possível concluir o cadastro. Idade mínima: 13 anos")
-}
-
-else if (idade >= 13) {
+// verificação da idade//
+if (idade >= 13) {
     let senha = prompt("Digite uma senha: ")
+} else{
+    alert("Você não pode se cadastrar. Idade mínima: 13 anos.")
 }
-
-alert(`--- Cadastro de Usuário ---
-
-Nome: ${nome}
-Idade: ${idade} anos
-Senha: ${senha}
-
----------------------------
-
-Faça login para acessar sua conta.`)
+alert("Cadastro realizado com sucesso!")
 // login do usuário //
 let confnome = prompt("Digite o nome do seu cadastro: ")
-let confidade = parseInt(prompt("Digite a idade do seu cadastro: "))
 let confsenha = prompt("Digite a senha do seu cadastro: ")
+
+if (confnome === nome && confsenha === senha) {
+    alert(`Login realizado com sucesso! Bem-vindo, ${confnome}.
+`)
+}
