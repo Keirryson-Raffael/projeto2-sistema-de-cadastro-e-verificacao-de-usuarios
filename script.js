@@ -11,8 +11,10 @@ let confsenha = prompt("Digite a senha do seu cadastro: ").toLowerCase()
 if (confnome === nome && confsenha === senha) {
     alert(`Login realizado com sucesso! Bem-vindo, ${confnome}.
 `) }else{
+       alert("Você digitou algo errado, tente novamente.")
 }
 } else{
     alert("Você não pode se cadastrar. Idade mínima: 13 anos.")
 }
+
 
