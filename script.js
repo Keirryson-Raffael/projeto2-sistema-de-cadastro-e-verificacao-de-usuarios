@@ -8,12 +8,12 @@ let senha = prompt("Digite uma senha: ").toLowerCase()
        alert("Cadastro realizado com sucesso!")
 let confnome = prompt("Digite o nome do seu cadastro: ").toLowerCase()
 let confsenha = prompt("Digite a senha do seu cadastro: ").toLowerCase()
-
-} else{
-    alert("Você não pode se cadastrar. Idade mínima: 13 anos.")
-}
 if (confnome === nome && confsenha === senha) {
     alert(`Login realizado com sucesso! Bem-vindo, ${confnome}.
 `) }else{
 
 }
+} else{
+    alert("Você não pode se cadastrar. Idade mínima: 13 anos.")
+}
+
