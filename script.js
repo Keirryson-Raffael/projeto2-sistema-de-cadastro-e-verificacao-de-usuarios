@@ -1,19 +1,18 @@
 // criação de nome, idade e senha do usuário //
-let nome = prompt("Digite seu nome: ")
+let nome = prompt("Digite seu nome: ").toLowerCase()
 let idade = parseInt(prompt("Digite sua idade: "))
 
 // verificação da idade//
 if (idade >= 13) {
-    let senha = prompt("Digite uma senha: ")
+    let senha = prompt("Digite uma senha: ").toLowerCase()
     alert("Cadastro realizado com sucesso!")
 // login do usuário //
-let confnome = prompt("Digite o nome do seu cadastro: ")
-let confsenha = prompt("Digite a senha do seu cadastro: ")
-
+let confnome = prompt("Digite o nome do seu cadastro: ").toLowerCase()
+let confsenha = prompt("Digite a senha do seu cadastro: ").toLowerCase()
+} else{
+    alert("Você não pode se cadastrar. Idade mínima: 13 anos.")
+}
 if (confnome === nome && confsenha === senha) {
     alert(`Login realizado com sucesso! Bem-vindo, ${confnome}.
 `)
-}
-} else{
-    alert("Você não pode se cadastrar. Idade mínima: 13 anos.")
 }
